@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo</title>
+    <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#tecnologies">Tecnologias</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Olá, Eu sou <span>Rodrigo</span></h1>
+            <h2>Analista de Redes, Ciberseguranca e DevOps</h2>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Instagram</a>
+            </div>
+            <a href="#projects" class="hire-me">Veja meus projetos</a>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <main>
+        <section id="projects">
+            <h2>Meus Projetos</h2>
+            {% for project in projects %}
+                <div class="project">
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ project.description }}</p>
+                    <a href="{{ project.link }}">Veja mais</a>
+                </div>
+            {% endfor %}
+        </section>
+        
+        <section id="blog">
+            <h2>Blog</h2>
+            {% for post in blogposts %}
+                <div class="post">
+                    <h3>{{ post.title }}</h3>
+                    <p>{{ post.content }}</p>
+                    <p>{{ post.created_at|date:"d M Y" }}</p>
+                </div>
+            {% endfor %}
+        </section>
+    </main>
+
+    <footer>
+        <p>

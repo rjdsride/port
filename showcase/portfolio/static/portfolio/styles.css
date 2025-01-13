@@ -1,0 +1,137 @@
+/* Estilo Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #111;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #444;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px; 
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #d9d9d9;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+header nav {
+    display: flex; 
+    justify-content: flex-end; 
+    padding-right: 20px; 
+}
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #111;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #ff4d4d;
+}
+
+.hero-content h1 span {
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin: 20px 0;
+    color: #d9d9d9;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #d9d9d9;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    color: #ff4d4d;
+}
+
+.hire-me {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hire-me:hover {
+    background-color: #e04343;
+}
+
+/* Seções principais */
+main {
+    padding: 100px 20px;
+}
+
+.project, .post {
+    border: 1px solid #444;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #222;
+}
+
+/* Rodapé */
+footer {
+    background: #111;
+    color: #d9d9d9;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+}
